@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   ]
   s.authors, s.email = authors.transpose
 
-  s.description = "Parse (hueg) XML documents into Ruby objects with a nifty declarative language!"
+  s.description = "Parse (huge) XML documents into Ruby objects with a nifty declarative language!"
   s.summary     = "Tired of writing parsers for XML files? Now you can parse XML into Ruby objects with ease! SAXMachine provides a simple declarative language for describing how to convert XML into Ruby objects."
   s.homepage    = "https://github.com/epitron/lazy-sax-machine"
   s.licenses    = ["MIT"]
