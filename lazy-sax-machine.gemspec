@@ -25,5 +25,5 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.md"]
   s.require_paths    = ["lib"]
 
-  s.add_dependency("nokogiri", "> 0.0.0")
+  s.add_dependency("nokogiri", "> 1.4")
 end
