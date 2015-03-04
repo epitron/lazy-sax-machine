@@ -16,6 +16,31 @@ module SAXMachine
     end
     self
   end
+
+  #
+  # Convert this node to a hash
+  #
+  def to_h
+    h = {}
+    instance_variables.each do |iv|
+      val = instance_variable_get(iv)
+      val = val.map(&:to_h) if val.is_a? Array
+      
+      key = iv[1..-1]
+
+      h[key] = val
+    end
+
+    h
+  end
+
+  #
+  # Convert this node to JSON
+  #
+  def to_json
+    require 'json'
+    JSON.dump(to_h)
+  end
   
   module ClassMethods
 

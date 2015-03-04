@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'benchmark'
 require 'happymapper'
-require 'sax-machine'
+require 'lazy-sax-machine'
 require 'rfeedparser'
 include Benchmark
 benchmark_iterations = 100

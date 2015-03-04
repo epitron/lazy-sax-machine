@@ -1,17 +1,6 @@
 gem_version = File.read("VERSION").strip
 gem_name = "lazy-sax-machine"
 
-require "rspec/core/rake_task"
-# require File.dirname(__FILE__) + '/lib/sax-machine.rb'
-
-
-task :default => :spec
-
-desc "Run all specs"
-RSpec::Core::RakeTask.new do |t|
-  t.rspec_opts = ['--options', "\"#{File.dirname(__FILE__)}/spec/spec.opts\""]
-end
-
 
 desc "Build the gem"
 task :build do
@@ -34,3 +23,13 @@ task :pry do
   system "pry --gem"
 end
 
+
+
+require "rspec/core/rake_task"
+
+desc "Run all specs"
+RSpec::Core::RakeTask.new do |t|
+  t.rspec_opts = ['--options', "\"#{File.dirname(__FILE__)}/spec/spec.opts\""]
+end
+
+task :default => :spec

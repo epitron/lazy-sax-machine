@@ -1,7 +1,7 @@
-require "sax-machine/sax_attribute_config"
-require "sax-machine/sax_element_value_config"
-require "sax-machine/sax_element_config"
-require "sax-machine/sax_collection_config"
+require "lazy-sax-machine/sax_attribute_config"
+require "lazy-sax-machine/sax_element_value_config"
+require "lazy-sax-machine/sax_element_config"
+require "lazy-sax-machine/sax_collection_config"
 
 module SAXMachine
   class SAXConfig
