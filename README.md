@@ -4,9 +4,9 @@
 
 Tired of writing parsers for XML files? Now you can parse XML into Ruby objects with ease! SAXMachine provides a simple declarative language for describing how to convert XML into Ruby objects.
 
-This library can parse GIGANTIC XML files without blowing up your computer. (Unlike the original [SAXMachine](https://github.com/pauldix/sax-machine) gem.)
+This library can parse __gigantic__ XML files without blowing up your computer. (Unlike the original [SAXMachine](https://github.com/pauldix/sax-machine) gem.)
 
-As long as you declare the root object as "lazy", the parser will return an enumerable, which lets you pluck one object at a time out of the XML file.
+As long as you declare the root object as "lazy", the parser will parse the XML file as a stream and return an enumerable, which allows you to pluck one object out of the XML file at a time, storing as little of the XML file in memory as possible.
 
 ## Installation
 
@@ -25,7 +25,7 @@ $ bundle
 
 ## Usage
 
-SAX Machine currently only supports `nokogiri`, but eventually it will try to find the best XML library automatically. (First looking for `ox`, then `oga, then `nokogiri`.)
+SAX Machine currently only supports `nokogiri`, but eventually it will try to find the best XML library automatically. (First looking for `ox`, then `oga`, then `nokogiri`.)
 
 
 ## Examples

@@ -7,6 +7,7 @@ module SAXMachine
       def initialize(name, options)
         @name = name.to_s
         @as = options[:as]
+        @class = options[:class]
         @setter = "#{@as}="
         @required = options[:required]
       end
